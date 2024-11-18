@@ -9,7 +9,6 @@
 ###############
 
 import numpy as np
-import json
 import argparse
 import utils
 
@@ -25,8 +24,8 @@ import utils
 class Board:
     ### Cell states
     UNKNOWN = 0
-    FILLED  = 1
-    BLANK   = 2
+    FILLED = 1
+    BLANK = 2
 
     ### Initialise empty board
     def __init__(self, n_rows: int, n_cols: int):
@@ -46,5 +45,4 @@ if __name__ == "__main__":
     ### Create board with the parsed size
     board = Board(config["n_rows"], config["n_cols"])
 
-    ### Print the board
     print(board.grid)
