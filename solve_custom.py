@@ -23,9 +23,9 @@ import utils
 
 class Board:
     ### Cell states
-    UNKNOWN = 0
-    FILLED = 1
-    BLANK = 2
+    UNKNOWN = -1
+    FILLED = 0
+    BLANK = 1
 
     ### Initialise empty board
     def __init__(self, n_rows: int, n_cols: int):
